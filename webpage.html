@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: antiquewhite;
+            padding-top: 140px; /* Added padding to account for fixed header + navbar */
+        }
+
+        .header-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            padding: 1rem;
+            margin: 0;
+            background-color: blueviolet;
+            color: white;
+            font-size: xx-large;
+        }
+
+        .navbar {
+            background-color: black;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow-x: auto;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            min-width: max-content;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            padding: 0 10px;
+        }
+
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .navbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .navbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+            text-transform: capitalize;
+            white-space: nowrap;
+        }
+
+        .nav-links a:hover {
+            background-color: #444;
+        }
+
+        .search-input {
+            padding: 8px;
+            border-radius: 4px;
+            border: none;
+            margin-left: 20px;
+            width: 200px;
+        }
+
+        .content {
+            background-color: rgb(255, 0, 64);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .links {
+            margin-bottom: 20px;
+        }
+
+        .links a {
+            margin: 5px;
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: white;
+            color: black;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .links a:hover {
+            background-color: #f0f0f0;
+        }
+
+        table {
+            width: 100%;
+            border: 2px solid black;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #444;
+        }
+
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            z-index: 1000;
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.05);
+            background-color: #128C7E;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding-top: 180px; /* Increased padding for mobile view */
+            }
+            
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .search-input {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <header>My Web Page</header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-links">
+                    <a href="#">Tutorials</a>
+                    <a href="#">Exercises</a>
+                    <a href="#">Certificates</a>
+                    <a href="#">Services</a>
+                    <a href="#">Menu</a>
+                    <a href="#">Tutorials</a>
+                    <a href="#">Exercises</a>
+                    <a href="#">Certificates</a>
+                    <a href="#">Services</a>
+                    <a href="#">Menu</a>
+                    <a href="#">Tutorials</a>
+                    <a href="#">Exercises</a>
+                    <a href="#">Certificates</a>
+                    <a href="#">Services</a>
+                    <a href="#">Menu</a>
+                    <a href="#">Tutorials</a>
+                    <a href="#">Exercises</a>
+                    <a href="#">Certificates</a>
+                    <a href="#">Services</a>
+                    <a href="#">Menu</a>
+                        <a href="#">Tutorials</a>
+                        <a href="#">Exercises</a>
+                        <a href="#">Certificates</a>
+                        <a href="#">Services</a>
+                        <a href="#">Menu</a>
+                        <a href="#">Tutorials</a>
+                        <a href="#">Exercises</a>
+                        <a href="#">Certificates</a>
+                        <a href="#">Services</a>
+                        <a href="#">Menu</a>
+                        <a href="#">Tutorials</a>
+                        <a href="#">Exercises</a>
+                        <a href="#">Certificates</a>
+                        <a href="#">Services</a>
+                        <a href="#">Menu</a>
+                        <input type="text" class="search-input" placeholder="Search...">
+                    </div>
+    </div>
+</nav>
+    <div class="content">
+        <div class="links">
+            <a href="php">PHP</a>
+            <a href="sql">SQL</a>
+            <a href="css">CSS</a>
+            <a href="mysql">MySQL</a>
+            <a href="javascript">JavaScript</a>
+            <a href="html">HTML</a>
+        </div>
+    </nav>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Subject</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alice</td>
+                    <td>Math</td>
+                </tr>
+                <tr>
+                    <td>Bob</td>
+                    <td>Science</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Subject</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alice</td>
+                    <td>Math</td>
+                </tr>
+                <tr>
+                    <td>Bob</td>
+                    <td>Science</td>
+                </tr>
+            </tbody>
+        </table> 
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Subject</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alice</td>
+                    <td>Math</td>
+                </tr>
+                <tr>
+                    <td>Bob</td>
+                    <td>Science</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <a href="https://wa.me/923019134096" target="_blank" class="whatsapp-btn">
+        📱 Chat on WhatsApp
+    </a>
+
+    <script>
+        document.querySelector('.search-input').addEventListener('input', function() {
+            console.log("You typed: " + this.value);
+        });
+    </script>
+</body>
+</html>
